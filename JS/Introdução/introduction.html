@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+</head>
+<body>
+    <h1>Salve Javascript</h1>
+    <p>esse parágrafo foi inserido via HTML</p>
+    <span class="rosa">nome do usuario</span>
+
+    <script>
+        /* funçao nativa de subir alertas */
+       alert('para continuar...');
+        
+        /* funçao nativa de coletar dados */
+        prompt('Informe sua conta bancaria');
+
+        prompt("Informe seu CPF");
+
+        confirm('burrão perdeu a conta😘')
+
+        var nome;
+        nome = prompt('Novamente digite sua conta bancaria');
+
+       var boxRosa = document.querySelector('.rosa');
+       boxRosa.innerHTML = 'Welcome'  + nome;
+    </script>
+    <h1><strong>Informações</strong></h1>
+</body>
+</html>
