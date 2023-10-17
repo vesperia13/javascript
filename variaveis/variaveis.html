@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Váriaveis</title>
+    <style>
+        .baby{
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        }
+        body{
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //declarando variaveis
+        var Acessoglobal; // É o tipo que pode ser acessada em todo programa
+        let AcessoLocal; // Pode ser acessada apenas no escopo em que nasceu
+        // Variavel do tipo const precisa ser inicializada
+        const naoMuda = 'esse valor é imutável'; //Não pode ser alterada
+
+        let nome, idade, altura;
+        let num1 = 3, num2 = 6, num3 =9;
+        var txt1 = 'que', txt2 = 'calor', txt3 = 'danado';
+        const cachorro = 'AuAu';
+        
+        nome = prompt('diga seu nome');
+        idade = prompt('diga sua idade');
+        window.document.write('<h3>salvee,' + nome + '!</h3>');
+        //modo abreviado
+        document.write(nome + ',voce tem:' + idade + 'anos' + '<br>');
+        document.write('<br>')
+        document.write('clique na imagem para saber quantos filhos <br> voce vai ter:<br>')
+        document.write('<img class="baby" src="baby.jfif"/>')
+        
+        //armazenando a imagem do lado do javascript
+        let imgClique = document.querySelector('.baby');
+        imgClique.addEventListener('click', function(){
+            var qntdfilhos = Math.floor(Math.random()*10);
+            document.write(nome + ',você apesar de já ter ' + idade +'anos,');
+            document.write('<br> seu karma e ter' + qntdfilhos + 'filhos correndo atras de você')
+            document.write('<br> HAHAHA!')
+            document.write('<br> <a href="https://www.youtube.com/watch?v=ZoAFngyIuZY">Clique aqui para se livrar dessa maldição</a>')
+        })
+    </script>
+</body>
+</html>
