@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metodos string</title>
+</head>
+<body>
+    <script>
+        //declaração das variaveis
+        let salve,texto1,rimaNycolas,happy;
+
+        //iniciar as variaveis(let)
+        salve = 'olá vamos começar a aprender JavaScript';
+        texto1 = 'osh haham isso não peraeee! meteu o loko';
+        rimaNycolas = 'ih eu sei haha sei nao oque rima com c';
+        happy = 'comida o pensamento vai em você';
+
+        //apresentar conteudo no documento
+        //modelo antigo  
+        document.write(salve + ' ' + texto1);
+        //versão atual(template string)
+        document.write('<br><br>');
+        //possibilidade de interpolação
+        document.write(`${salve.length} com o IOS`);
+        document.write('<br> Olhe no console');
+
+        //metodos de string
+        consoloe.log(salve.length);
+        console.log(texto1.substring(28));
+        console.log(texto1.substring(28,38));
+        console.log(rimaNycolas.split(' '));
+
+        let novoTexto = rimaNycolas.split('');
+        console.log(novoTexto[9]);
+        console.log(happy.split('e'));
+        console.log(rimaNycolas.replace('sei', 'não sei'));
+        happy = '   oi....'
+        console.log(happy);
+        console.log(happy.trim());
+    </script>
+</body>
+</html>
